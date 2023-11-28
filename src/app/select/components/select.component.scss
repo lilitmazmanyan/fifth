@@ -1,0 +1,25 @@
+.select-container {
+  position: relative;
+}
+
+.options-container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.options-container div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.options-container div:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,9 @@
+<div class="select-container">
+  <input type="text" placeholder="Search" [(ngModel)]="searchValue" (input)="onSearchInputChange()">
+  <div class="options-container" *ngIf="showOptions">
+    <div *ngFor="let item of visibleItems" (click)="selectItem(item)">
+      {{ item.name }}
+    </div>
+  </div>
+</div>
+
